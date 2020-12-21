@@ -23,35 +23,40 @@ import org.jsoup.select.Elements;
 
 public class App {
 
+	//This map keeps track of words & their occurrence
 	static Map<String, Integer> wordCountMap = new HashMap();
 	static Map<String, Integer> resultCountMap = new HashMap();
+	//This set is used to keep track of unique URLs visited 
 	static Set<String> visitedUrlSet = new HashSet<String>();
 	static String baseUrl = "";
 
 	public static void main(String[] args) {
 		try {
+			//Take URL from command line  
 			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 			String inputUrl = reader.readLine();
 			setBaseUrl(inputUrl);
 			System.out.println("Computing Most Frequent Words from input URL >> " + baseUrl + " <<  ...");
 
+			//Capture first visiting URL
 			isUrlNotVisited(baseUrl);
 			wordCountMap = addWordsFromUrl(baseUrl);
+			//Start web crawling from here - Use DFS algorithm & limit depth of recursive calls to a given limit
 			recursiveCrawlFromUrl(baseUrl, 1);
 
+			//Sort "Words -> occurrence" mapping by decreasing order of occurrence
 			wordCountMap = sortByValue(wordCountMap);
+			//Consider only top 10 results from the actual result
 			limitMapSize(wordCountMap, 10);
 			resultCountMap = sortByValue(resultCountMap);
 			printKeyValPair(resultCountMap);
 		} catch (IOException e) {
 			System.out.println("Something Went Wrong !! Exception msg : " + e.getMessage());
 		}
-
 	}
 
 	private static void printKeyValPair(Map<String, Integer> resultCountMap) {
 		System.out.println("***** Top 10 frequent words *****\n");
-
 		for (Map.Entry<String, Integer> entry : resultCountMap.entrySet()) {
 			System.out.println("Word : " + entry.getKey() + ", Occurrence :  " + entry.getValue());
 		}
@@ -73,6 +78,11 @@ public class App {
 		}
 	}
 
+	/**
+	 * This method considers text from a URL, splits into words & stores occurrence in a in-memory map.
+	 * @param url
+	 * @return
+	 */
 	private static Map<String, Integer> addWordsFromUrl(String url) {
 		Document doc;
 		try {
@@ -98,6 +108,12 @@ public class App {
 		}
 	}
 
+	/**
+	 * This method recursively crawls URLs within the URLs up-to a defined depth. Considers words in nested URLs for their occurrence
+	 * @param url
+	 * @param recurDepth
+	 * @throws IOException
+	 */
 	public static void recursiveCrawlFromUrl(String url, int recurDepth) throws IOException {
 		if (recurDepth > 4) {
 			return;
@@ -120,7 +136,11 @@ public class App {
 			System.out.println("Exception " + e.getMessage());
 		}
 	}
-
+	/**
+	 * This method checks if a URL is already visited. If not stores the new URL.
+	 * @param url
+	 * @return
+	 */
 	private static boolean isUrlNotVisited(String url) {
 		if (visitedUrlSet.contains(url)) {
 			return false;
