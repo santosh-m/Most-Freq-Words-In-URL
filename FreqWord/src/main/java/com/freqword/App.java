@@ -114,7 +114,7 @@ public class App {
 	 * @param recurDepth
 	 * @throws IOException
 	 */
-	public static void recursiveCrawlFromUrl(String url, int recurDepth) throws IOException {
+	public static void recursiveCrawlFromUrl(String url, int recurDepth){
 		if (recurDepth > 4) {
 			return;
 		}
