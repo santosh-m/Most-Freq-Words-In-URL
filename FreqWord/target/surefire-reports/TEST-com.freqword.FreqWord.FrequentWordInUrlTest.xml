@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.freqword.FreqWord.FrequentWordInUrlTest" time="23.851" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/B0213456/Santosh/FreqWord/FreqWord/target/test-classes:/Users/B0213456/Santosh/FreqWord/FreqWord/target/classes:/Users/b0213456/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.0/junit-jupiter-engine-5.1.0.jar:/Users/b0213456/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/b0213456/.m2/repository/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar:/Users/b0213456/.m2/repository/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar:/Users/b0213456/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/b0213456/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.0/junit-jupiter-api-5.1.0.jar:/Users/b0213456/.m2/repository/org/jsoup/jsoup/1.10.2/jsoup-1.10.2.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/B0213456/Santosh/FreqWord/FreqWord/target/surefire/surefirebooter7489453552865020788.jar /Users/B0213456/Santosh/FreqWord/FreqWord/target/surefire 2020-12-22T06-49-46_867-jvmRun1 surefire7302886720663697222tmp surefire_06746874755092755272tmp"/>
+    <property name="http.nonProxyHosts" value="airtelworld.in|*.airtelworld.in|touchtelindia.com|*.touchtelindia.com|airtelworld.in|*.airtelworld.in|10.1.9.45|mn.bharti.com|*.mn.bharti.com|goofy|*.goofy|https://sms.airtelworld.in|*.https://sms.airtelworld.in|webmail.airtel.com|*.webmail.airtel.com|oa.airtel.com|*.oa.airtel.com|w3.airtel.in|*.w3.airtel.in|airtelworld.in|*.airtelworld.in|airtel.com|*.airtel.com|airtel.itm|*.airtel.itm|webmail.airtel.com|*.webmail.airtel.com|odc.officeapps.live.com|*.odc.officeapps.live.com|templateservice.office.com|*.templateservice.office.com|omextemplates.content.office.net|*.omextemplates.content.office.net|officeclient.microsoft.com|*.officeclient.microsoft.com|drosissc-appz08.airtel.in|*.drosissc-appz08.airtel.in|airtellive.com|*.airtellive.com"/>
+    <property name="surefire.test.class.path" value="/Users/B0213456/Santosh/FreqWord/FreqWord/target/test-classes:/Users/B0213456/Santosh/FreqWord/FreqWord/target/classes:/Users/b0213456/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.0/junit-jupiter-engine-5.1.0.jar:/Users/b0213456/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/b0213456/.m2/repository/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar:/Users/b0213456/.m2/repository/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar:/Users/b0213456/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/b0213456/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.0/junit-jupiter-api-5.1.0.jar:/Users/b0213456/.m2/repository/org/jsoup/jsoup/1.10.2/jsoup-1.10.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/B0213456"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/B0213456/Santosh/FreqWord/FreqWord"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/B0213456/Santosh/FreqWord/FreqWord/target/surefire/surefirebooter7489453552865020788.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="airtelworld.in|*.airtelworld.in|touchtelindia.com|*.touchtelindia.com|airtelworld.in|*.airtelworld.in|10.1.9.45|mn.bharti.com|*.mn.bharti.com|goofy|*.goofy|https://sms.airtelworld.in|*.https://sms.airtelworld.in|webmail.airtel.com|*.webmail.airtel.com|oa.airtel.com|*.oa.airtel.com|w3.airtel.in|*.w3.airtel.in|airtelworld.in|*.airtelworld.in|airtel.com|*.airtel.com|airtel.itm|*.airtel.itm|webmail.airtel.com|*.webmail.airtel.com|odc.officeapps.live.com|*.odc.officeapps.live.com|templateservice.office.com|*.templateservice.office.com|omextemplates.content.office.net|*.omextemplates.content.office.net|officeclient.microsoft.com|*.officeclient.microsoft.com|drosissc-appz08.airtel.in|*.drosissc-appz08.airtel.in|airtellive.com|*.airtellive.com"/>
+    <property name="java.runtime.version" value="1.8.0_191-b12"/>
+    <property name="user.name" value="B0213456"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/b0213456/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/l1/67l163qd53jf4kjbl_pf36z00000gp/T/"/>
+    <property name="java.version" value="1.8.0_191"/>
+    <property name="user.dir" value="/Users/B0213456/Santosh/FreqWord/FreqWord"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/B0213456/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="java.ext.dirs" value="/Users/B0213456/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="airtelworld.in|*.airtelworld.in|touchtelindia.com|*.touchtelindia.com|airtelworld.in|*.airtelworld.in|10.1.9.45|mn.bharti.com|*.mn.bharti.com|goofy|*.goofy|https://sms.airtelworld.in|*.https://sms.airtelworld.in|webmail.airtel.com|*.webmail.airtel.com|oa.airtel.com|*.oa.airtel.com|w3.airtel.in|*.w3.airtel.in|airtelworld.in|*.airtelworld.in|airtel.com|*.airtel.com|airtel.itm|*.airtel.itm|webmail.airtel.com|*.webmail.airtel.com|odc.officeapps.live.com|*.odc.officeapps.live.com|templateservice.office.com|*.templateservice.office.com|omextemplates.content.office.net|*.omextemplates.content.office.net|officeclient.microsoft.com|*.officeclient.microsoft.com|drosissc-appz08.airtel.in|*.drosissc-appz08.airtel.in|airtellive.com|*.airtellive.com"/>
+  </properties>
+  <testcase name="testWordCountIsNotZeroWithValidUrl" classname="com.freqword.FreqWord.FrequentWordInUrlTest" time="0.648"/>
+  <testcase name="testInvalidnputUrl" classname="com.freqword.FreqWord.FrequentWordInUrlTest" time="0.001"/>
+  <testcase name="testVisitedUrlsIsNonZeroWithValidUrl" classname="com.freqword.FreqWord.FrequentWordInUrlTest" time="0.081"/>
+  <testcase name="testEmptyInputUrl" classname="com.freqword.FreqWord.FrequentWordInUrlTest" time="0.001"/>
+  <testcase name="testWordCountWithValidUrl" classname="com.freqword.FreqWord.FrequentWordInUrlTest" time="0.188"/>
+  <testcase name="testInvalidStatusCodeFromUrl" classname="com.freqword.FreqWord.FrequentWordInUrlTest" time="0.042"/>
+  <testcase name="testVisitedUrlCountIsLargerWithHigherDepth" classname="com.freqword.FreqWord.FrequentWordInUrlTest" time="12.155"/>
+  <testcase name="testWordCountIsLargerWithHigherDepth" classname="com.freqword.FreqWord.FrequentWordInUrlTest" time="10.727"/>
+  <testcase name="testSortMapByValueInDescOrderApi" classname="com.freqword.FreqWord.FrequentWordInUrlTest" time="0"/>
+  <testcase name="testLimitMapSizeToTopKApi" classname="com.freqword.FreqWord.FrequentWordInUrlTest" time="0"/>
+</testsuite>

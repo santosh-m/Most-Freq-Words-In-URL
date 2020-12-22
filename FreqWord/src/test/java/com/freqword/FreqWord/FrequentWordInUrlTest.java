@@ -20,7 +20,6 @@ import com.freqword.FrequentWordInUrl;
  * Unit test for Frequent Word In URL Class
  */
 public class FrequentWordInUrlTest {
-	
 
 	private FrequentWordInUrl freqWordInstance;
 	private static final String VALID_MOCK_URL = "https://en.wikipedia.org/wiki/Main_Page" ;
@@ -31,8 +30,8 @@ public class FrequentWordInUrlTest {
 	void initEach() {
 		freqWordInstance = new FrequentWordInUrl();
 		freqWordInstance.setBaseUrl(VALID_MOCK_URL);
-		emptyMap = new HashMap<>();
-		emptySet = new HashSet<>();
+		emptyMap = new HashMap();
+		emptySet = new HashSet();
 	}
 	
 	@Test
@@ -69,11 +68,11 @@ public class FrequentWordInUrlTest {
 	
 	@Test 
 	void testSortMapByValueInDescOrderApi() {
-		Map<String, Integer> testMap = new HashMap<>();
+		Map<String, Integer> testMap = new HashMap();
 		testMap.put("John", 20);
 		testMap.put("Joe", 10);
 		testMap.put("Smith", 30);
-		Map<String, Integer> expectedMap = new LinkedHashMap<>();
+		Map<String, Integer> expectedMap = new LinkedHashMap();
 		expectedMap.put("Smith", 30);
 		expectedMap.put("John", 20);
 		expectedMap.put("Joe", 10);
@@ -84,11 +83,11 @@ public class FrequentWordInUrlTest {
 	
 	@Test 
 	void testLimitMapSizeToTopKApi() {
-		Map<String, Integer> testMap = new LinkedHashMap<>();
+		Map<String, Integer> testMap = new LinkedHashMap();
 		testMap.put("Smith", 30);
 		testMap.put("John", 20);
 		testMap.put("Joe", 10);
-		Map<String, Integer> expectedMap = new LinkedHashMap<>();
+		Map<String, Integer> expectedMap = new LinkedHashMap();
 		expectedMap.put("Smith", 30);
 		expectedMap.put("John", 20);
 		Map<String, Integer> actualMapFromAPI = freqWordInstance.limitMapSize(testMap, 2);
@@ -100,7 +99,7 @@ public class FrequentWordInUrlTest {
 	void testWordCountWithValidUrl() {
 		freqWordInstance.setBaseUrl("https://www.google.com/intl/en-GB/gmail/about/#");
 		freqWordInstance.processUrl();
-		Map<String, Integer> mockMap = new LinkedHashMap<>(); 
+		Map<String, Integer> mockMap = new LinkedHashMap(); 
 		mockMap.put("Gmail" , 15);
 		mockMap.put("to" , 11);
 		mockMap.put("Get" , 10);

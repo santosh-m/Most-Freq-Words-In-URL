@@ -96,6 +96,7 @@ public class FrequentWordInUrl {
 	 * Read URL from command line input
 	 */
 	private void readUrlFromCommandLine(){
+		System.out.println("Please input the URL !");
 		String inputUrl = "";
 		try {
 			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
