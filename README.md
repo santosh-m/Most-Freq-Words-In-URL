@@ -13,8 +13,8 @@ mvn clean install -Dmaven.test.skip=true
 
 4. Run Main class :
 mvn exec:java -Dexec.mainClass="com.freqword.FrequentWordInUrl"
-<Input URL when prompted on console>
-<In a few secs/mins Most frequent words will be displayed on console>
+*Input URL when prompted on console*
+*In a few secs/mins Most frequent words will be displayed on console*
 
 5. Run all test cases :
 mvn test
@@ -31,8 +31,8 @@ mvn clean install -Dmaven.test.skip=true
 
 4. Run Main class :
 Right click on FrequentWordInUrl.java -> Run as Java Application
-<Input URL when prompted on console>
-<In a few secs/mins Most frequent words will be displayed on console>
+*Input URL when prompted on console*
+*In a few secs/mins Most frequent words will be displayed on console*
 
 5. Run all test cases :
 Right click on FrequentWordInUrlTest.java -> Run as Junit Test
